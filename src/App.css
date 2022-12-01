@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1;
+
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: #494646;
+
+	background: #f1f1f1;
+}
+
+input {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	cursor: pointer;
+}
+
+input:focus {
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: rgba(73, 70, 70, 0.4);
+	font-size: 14px;
+}
+
+input:first-child {
+	margin-right: 10px;
+}
+
+.search-input {
+	width: 610px;
+	margin-bottom: 10px;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	color: inherit;
+	background-color: #fff;
+	box-shadow: 5px 5px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+button:first-of-type {
+	margin: 0 10px;
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+.App {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.list {
+	padding: 25px;
+}
+
+.element {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.element-name {
+	min-width: 400px;
+	padding-right: 25px;
+	font-size: 1.2rem;
+}
